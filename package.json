@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.0",
+    "node": "^17.7.2"
+  },
+  "name": "team-profile-generator",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cspower5/team-profile-generator.gi.git"
+  },
+  "author": "Christopher Borer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cspower5/team-profile-generator.gi/issues"
+  },
+  "homepage": "https://github.com/cspower5/team-profile-generator.gi#readme"
+}
