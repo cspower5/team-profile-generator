@@ -9,9 +9,8 @@ const generateHtml = require("./generateHtml");
 const employees = [];
 
 
-function start(){
-	console.log("hello");
-  	mainMenu();
+function init() {
+	mainMenu();
 }
 
 async function mainMenu(){
@@ -36,9 +35,10 @@ async function createManager(){
       {name: "email", message: "manager's email?"},
       {name: "officeNumber", message: "manager's office number?"}
     ]);
-  	const manager = new Manager(name, id, email, officeNumber);
+    const manager = new Manager(name, id, email, officeNumber);
+    console.log("this is the current manager " + manager);
   	employees.push(manager);
-  	mainMenu();
+    mainMenu();
 }
 
 async function createEngineer(){
@@ -66,13 +66,13 @@ async function createIntern(){
 }
 
 function end(){
-	const html = generateHtml(employees);
+    const html = generateHtml(employees);
   	fs.writeFileSync("./dist/team.html", html);
   	console.log("check the dist folder for your html file");
   	console.log("thanks!");
 }
 
-start();
+init();
 
 
 
